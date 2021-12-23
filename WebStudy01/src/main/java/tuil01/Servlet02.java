@@ -1,4 +1,4 @@
-
+package tuil01;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class PlusServlet01
+ * Servlet implementation class Servlet02
  */
-@WebServlet("/PlusServlet01")
-public class PlusServlet01 extends HttpServlet {
+@WebServlet("/Servlet02")
+public class Servlet02 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public PlusServlet01() {
+    public Servlet02() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -28,18 +28,20 @@ public class PlusServlet01 extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
-		String str1=req.getParameter("num1");
-		String str2=req.getParameter("num2");
-		int num1=Integer.parseInt(str1);
-		int num2=Integer.parseInt(str2);
-		
-		int add=num1+num2;
+		String str1=req.getParameter("a");
+		String str2=req.getParameter("b");
+		String str3=req.getParameter("c");
+		int a=Integer.parseInt(str1);
+		int b=Integer.parseInt(str2);
+		int c=Integer.parseInt(str3);
 		PrintWriter out=response.getWriter();
-		out.println("<html><head><title>Plus</title></head>");
+		
+		out.println("<html><head><title>gugudan</title></head>");
 		out.println("<body>");
-		out.println(num1+"+"+num2+"="+add);
+		int x1=(int) (((-b)+Math.sqrt(b*b-4*a*c))/(2*a));
+		int x2=(int) (((-b)-Math.sqrt(b*b-4*a*c))/(2*a));
+		out.println("SQRT<br>x1 : "+x1+"<br>x2 : "+x2);
 		out.println("</body></html>");
-//		response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 
 	/**
