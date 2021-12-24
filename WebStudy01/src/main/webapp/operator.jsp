@@ -7,7 +7,7 @@
 <title>사칙연산</title>
 </head>
 <body>
-<form method="POST" action="opServlet">
+<form method="get" action="operator_bk.jsp">
 <table>
 <tr>
 	<td>Value1</td><td><input type=text name=value1 id=value1></td>
@@ -19,10 +19,10 @@
 	<td>Operator</td>
 	<td>
 	<select size=4 name=operator id=operator>
-    <option value="+">+</option>
-    <option value="-">-</option>
-    <option value="*">*</option>
-    <option value="/">/</option>
+    <option value="+">+ (Plus)</option>
+    <option value="-">- (Minus)</option>
+    <option value="*">* (Multiply)</option>
+    <option value="/">/ (Divide)</option>
 </select></td>
 </tr>
 <tr>
