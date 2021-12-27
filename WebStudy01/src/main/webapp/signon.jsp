@@ -60,15 +60,17 @@
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <script>
 $(document)
-// .on('submit',function(){
-// 	if($('input[name=passcode1]').val()==''){
-// 		alert('false');
-// 		return false; //submit 취소
-// 	}else{
-// 		alert('true');
-// 		return true; //submit 실행
-// 	}
-// })
+.on('submit',function(){
+	if($('input[name=realname]').val()==''){alert('이름을 입력');return false;}
+	if($('input[name=userid]').val()==''){alert('아이디를 입력');return false;}
+	if($('input[name=passcode]').val()==''){alert('비밀번호를 입력');return false;}
+	if($('input[name=passcode1]').val()==''){alert('비밀번호 확인을 입력');return false;}
+	if($('input[name=passcode1]').val()!=$('input[name=passcode]').val()){alert('비밀번호와 비밀번호확인이 다름!');return false;};
+	if($('input:radio[name=gender]').is(":checked")==false){alert('성별을 고르시오');return false;}
+	if($('input:checkbox[name=interest]').is(":checked")==false){alert('관심분야를 고르시오');return false;}
+	if($('input[name=mobile]').val()==''){alert('모바일번호를 입력');return false;}
+
+})
 .on('click','#btnCancel',function(){
 	document.location='login.jsp';
 })

@@ -4,11 +4,20 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>home</title>
+<title>Home</title>
 </head>
 <body>
-	<table align=center>
-	<tr><td align=right><a href='login.jsp'>로그인</a>
+<table align=center><tr><td align=right>
+<%	
+
+ if(request.getAttribute("userid")==null){
+	 out.print("<a href='login.jsp'>로그인</a><td align=right><a href='signon.jsp'>회원가입</a>");
+ }else{
+	 out.print(request.getAttribute("userid")+"  <a href='logout.jsp'>로그아웃</a>");
+ }
+%>
+</td>
+</tr>
 	</table>
 </body>
 </html>
