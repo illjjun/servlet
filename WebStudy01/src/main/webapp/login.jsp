@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form method=post action="login_check.jsp">
+<form method=post action="login_check.jsp"  id=frmLogin>
 
 <table align=center>
 <tr><td align=center>
@@ -26,11 +26,19 @@
 </body>
 <script src='https://code.jquery.com/jquery-3.5.0.js'></script>
 <script>
-$(function(){
-    $('#btnCancel').click(function(){
-       location.replace('home.jsp');
-    });
-});
+$(document)
+.on('click','#btnCancel',function(){
+	location.replace('home.jsp');	
+})
+.on('submit','#frmLogin',function(){
+	if($('#userid').val()==''){
+		alert('userid is empty');
+		return false;
+	}else if($('#passcode').val()==''){
+		alert('the userid does not exist');
+		return false;
+})
+
 
 </script>
 </html>

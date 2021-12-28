@@ -10,10 +10,10 @@
 <table align=center><tr><td align=right>
 <%	
 
- if(request.getAttribute("userid")==null){
+ if(session.getAttribute("userid")==null){
 	 out.print("<a href='login.jsp'>로그인</a><td align=right><a href='signon.jsp'>회원가입</a>");
  }else{
-	 out.print(request.getAttribute("userid")+"  <a href='logout.jsp'>로그아웃</a>");
+	 out.print(session.getAttribute("userid")+"  <a href='logout.jsp'>로그아웃</a>");
  }
 %>
 </td>

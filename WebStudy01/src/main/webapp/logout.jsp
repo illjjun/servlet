@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
-	request.removeAttribute("userid");
+	session.removeAttribute("userid");
 	request.getRequestDispatcher("home.jsp").forward(request,response);
 %>
