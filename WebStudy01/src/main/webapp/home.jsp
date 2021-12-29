@@ -7,6 +7,7 @@
 <title>Home</title>
 </head>
 <body>
+<jsp:include page="header.jsp" />
 <table align=center><tr><td align=right>
 <%	
 
@@ -15,9 +16,13 @@
  }else{
 	 out.print(session.getAttribute("userid")+"  <a href='logout.jsp'>로그아웃</a>");
  }
+
+
 %>
 </td>
 </tr>
 	</table>
+<jsp:include page="footer.jsp" />
 </body>
+
 </html>
