@@ -11,7 +11,7 @@
 <body class="login_body">
 <jsp:include page="header.jsp" />
 <form method=post action="login_check.jsp"  id=frmLogin>
-
+<jsp:include page="header.jsp" />
 <table align=center>
 <tr><td align=center>
 <h1>로그인</h1></td></tr>

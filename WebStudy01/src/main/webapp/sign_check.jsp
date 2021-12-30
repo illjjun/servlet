@@ -3,8 +3,12 @@
 
 
 <%
-			session.setAttribute("userid",request.getParameter("userid"));
-			session.setAttribute("passcode",request.getParameter("passcode"));
-			request.getRequestDispatcher("login.jsp").forward(request,response);
+// 			session.setAttribute("userid",request.getParameter("userid"));
+// 			session.setAttribute("passcode",request.getParameter("passcode"));
+// 			response.sendRedirect("login.jsp");
 %>
 
+
+<jsp:forward page="login.jsp">
+	<jsp:param name="userid"  value=<%=request.getParameter("userid")%>" />
+</jsp:forward>

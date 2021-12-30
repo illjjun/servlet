@@ -7,7 +7,11 @@
 <meta charset="UTF-8">
 <title>Home</title>
 </head>
+<<<<<<< HEAD
 <body class="home_body">
+=======
+<body>
+>>>>>>> branch 'main' of https://github.com/illjjun/servlet.git
 <jsp:include page="header.jsp" />
 <table align=center><tr><td align=right>
 <%	
@@ -17,10 +21,17 @@
  }else{
 	 out.print(session.getAttribute("userid")+"  <a href='logout.jsp'>로그아웃</a>");
  }
+
+
 %>
 </td>
 </tr>
 	</table>
+<<<<<<< HEAD
 	<jsp:include page="footer.jsp" />
+=======
+<jsp:include page="footer.jsp" />
+>>>>>>> branch 'main' of https://github.com/illjjun/servlet.git
 </body>
+
 </html>
