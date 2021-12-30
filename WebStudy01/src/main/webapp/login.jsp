@@ -4,9 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">	
+    <link rel='stylesheet' type='text/css' href='login_style.css'>
 <title>Insert title here</title>
 </head>
-<body>
+<body class="login_body">
+<jsp:include page="header.jsp" />
 <form method=post action="login_check.jsp"  id=frmLogin>
 
 <table align=center>
@@ -23,13 +26,12 @@
 
 
 </form>
+<jsp:include page="footer.jsp" />
 </body>
 <script src='https://code.jquery.com/jquery-3.5.0.js'></script>
 <script>
 $(document)
-.on('click','#btnCancel',function(){
-	location.replace('home.jsp');	
-})
+
 .on('submit','#frmLogin',function(){
 	if($('#userid').val()==''){
 		alert('userid is empty');
@@ -37,8 +39,10 @@ $(document)
 	}else if($('#passcode').val()==''){
 		alert('the userid does not exist');
 		return false;
+}})
+
+.on('click','#btnCancel',function(){
+	document.location="home.jsp";	
 })
-
-
 </script>
 </html>

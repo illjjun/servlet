@@ -1,0 +1,24 @@
+@charset "EUC-KR";
+
+h3{
+	color: cyan;
+}
+
+.home_body{
+	color:white;
+	background-size:cover;
+	background-image:url(https://s1.best-wallpaper.net/wallpaper/m/1807/StarCraft-terran-soldiers-rain_m.webp);
+}
+.login_body{
+	color:white;
+	background-size:cover;
+	background-image:url(https://c.wallhere.com/photos/31/59/1920x1080_px_Protoss_starcraft_Starcraft_II-686073.jpg!d);
+}
+.signon_body{
+	background-image:url(https://ww.namu.la/s/9a3de405c3337115f8aa0531dba8a88d94285f19e705a3016e74669e0543b230959adaa7dfb908a5572adadab160d078d8bfcb9674edaa7bf9fb16d483d3798c481878cc9c9c676e58e6eb7ed86356c2edd9dcc6752863e5e55e2c389b9341ebcd6801db9a600e49d37aa492ee2b6fb1);
+	background-size:cover;
+	color:white;
+}
+a{
+	color:white;
+}

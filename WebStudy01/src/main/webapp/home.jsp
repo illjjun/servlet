@@ -3,10 +3,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel='stylesheet' type='text/css' href='login_style.css'>
 <meta charset="UTF-8">
 <title>Home</title>
 </head>
-<body>
+<body class="home_body">
+<jsp:include page="header.jsp" />
 <table align=center><tr><td align=right>
 <%	
 
@@ -19,5 +21,6 @@
 </td>
 </tr>
 	</table>
+	<jsp:include page="footer.jsp" />
 </body>
 </html>

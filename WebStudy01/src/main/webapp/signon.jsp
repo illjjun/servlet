@@ -4,9 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
+    <link rel='stylesheet' type='text/css' href='login_style.css'>
 <title>회원가입</title>
 </head>
-<body>
+<body class="signon_body">
+<jsp:include page="header.jsp" />
 <form method=post action=sign_check.jsp>
 <h1 align=center>회원가입</h1>
     <table align=center>
@@ -56,6 +58,7 @@
         		<input type=button id=btnCancel value='취소'></td></tr>
     </table>
 </form>
+<jsp:include page="footer.jsp" />
 </body>
 <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 <script>
