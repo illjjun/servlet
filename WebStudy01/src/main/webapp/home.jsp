@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,12 +8,8 @@
 <meta charset="UTF-8">
 <title>Home</title>
 </head>
-<<<<<<< HEAD
 <body class="home_body">
-=======
-<body>
->>>>>>> branch 'main' of https://github.com/illjjun/servlet.git
-<jsp:include page="header.jsp" />
+<c:import url="header.jsp" />
 <table align=center><tr><td align=right>
 <%	
 
@@ -26,12 +23,7 @@
 %>
 </td>
 </tr>
-	</table>
-<<<<<<< HEAD
-	<jsp:include page="footer.jsp" />
-=======
+</table>
 <jsp:include page="footer.jsp" />
->>>>>>> branch 'main' of https://github.com/illjjun/servlet.git
 </body>
-
 </html>

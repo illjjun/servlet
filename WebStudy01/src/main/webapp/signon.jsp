@@ -10,7 +10,6 @@
 <body class="signon_body">
 <jsp:include page="header.jsp" />
 <form method=post action=sign_check.jsp>
-<jsp:include page="header.jsp" />
 <h1 align=center>회원가입</h1>
     <table align=center>
     	<tr>
